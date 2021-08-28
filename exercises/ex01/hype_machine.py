@@ -1,4 +1,4 @@
-"""Using input function to create hype"""
+"""Using input function to create hype!"""
 
 __author__ = "730328302"
 
@@ -7,4 +7,4 @@ print("You entered: ")
 print(name)
 print("That is an amazing name, " + name + "!")
 print(name + ", You are so cool and quirky.")
-print( "I wish I could be you, " + name + ", but that's life!")
+print("I wish I could be you, " + name + ", but that's life!")
