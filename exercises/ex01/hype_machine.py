@@ -1,5 +1,10 @@
-# TODO: Write docstring here
+"""Using input function to create hype"""
 
-# TODO: Initialize __author__ variable here
+__author__ = "730328302"
 
-# TODO: Implement your program logic here
+name: str = input("What is your name? ")
+print("You entered: ")
+print(name)
+print("That is an amazing name, " + name + "!")
+print(name + ", You are so cool and quirky.")
+print( "I wish I could be you, " + name + ", but that's life!")
