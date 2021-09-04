@@ -14,7 +14,7 @@ from random import randint
 
 # Begin your solution here...
 print("Your fortune cookie says...")
-i: int = int(randint(1,4))
+i: int = int(randint(1, 4))
 
 if i == 1:
     print("Do not do tomorrow what you can do today.")
@@ -25,7 +25,7 @@ else:
         if i == 3: 
             print("Remember that everything happens for a reason!")
         else:
-            if i ==  4:
+            if i == 4:
                 print("Vibe check, turn that frown upside down!!")
 
 print("Now, go spread positive vibes!")
