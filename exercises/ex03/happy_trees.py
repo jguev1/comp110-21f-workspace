@@ -12,7 +12,5 @@ j: int = 1
 
 while i <= depth:
     print(TREE)
-    TREE = TREE + " " + constant_tree
+    TREE = TREE + constant_tree
     i = i + 1
-        
-

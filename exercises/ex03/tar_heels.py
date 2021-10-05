@@ -13,4 +13,5 @@ else:
     else:
         if inp % 2 == 0:
             print("TAR")
-        else: print("CAROLINA")
+        else: 
+            print("CAROLINA")
