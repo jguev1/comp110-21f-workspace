@@ -1,10 +1,6 @@
-"""Utility functions."""
-
-__author__ = "730328302"
+"""Some helpful utility functions for working with CSV files"""
 
 from csv import DictReader
-# Define your functions below
-
 
 def read_csv_rows(filename:str) -> list[dict[str,str]]:
     """Read the rows of a csv into a 'table'."""
@@ -28,7 +24,7 @@ def read_csv_rows(filename:str) -> list[dict[str,str]]:
 
 
 def column_values(table: list[dict[str, str]], column: str) -> list[str]:
-    """Produce a list[str] of all values in a single column."""
+    """Produce a list[str] of all values in a single column"""
     result: list[str] = []
     for row in table:
         item: str = row[column]
