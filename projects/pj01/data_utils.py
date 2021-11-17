@@ -128,7 +128,7 @@ def median(values: Union[list[str], list[int]])-> float:
     return median_is
 
 
-def mode(values: Union[list[str], list[int], list[float]]) -> list[int]:
+def mode(values: Union[list[str], list[int], list[float]]) -> list[float]:
     """A function that takes a list of str, converts to float, and finds mode"""
     values_as_str: list[str] = []
     values_count_list: list[int] = []
@@ -142,6 +142,8 @@ def mode(values: Union[list[str], list[int], list[float]]) -> list[int]:
     for key in new_dict:
         if new_dict[key] == highest_count:
             mode_is.append(key)
+
+    convert_to_float(mode_is)
 
     return mode_is
     

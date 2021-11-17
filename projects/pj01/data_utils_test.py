@@ -1,5 +1,5 @@
 """Test for Project 1 Utility functions"""
-from data_utils import mean, median, mode, std_dev, min
+from data_utils import mean, median, mode, std_dev, min, r_value
 
 
 def test_mean():
@@ -13,7 +13,7 @@ def test_mean_if_string():
 
 def test_median():
     """median of 20 values that should equal 7"""
-    assert median([9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4])
+    assert median([9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4]) == 7
     assert median(["9", "2", "5", "4", "12", "7", "8", "11", "9", "3", "7", "4", "12", "5", "4", "10", "9", "6", "9", "4"]) == 7
 
 
@@ -31,7 +31,12 @@ def test_std_dev():
 def test_min():
     """smallest number"""
     assert min([20, 20, 5]) == 5
+
+
+def test_r_value():
+    """median of 20 values that should equal 7"""
+    xp = [4.0, 3.0, 5, 4, 10, 9, 6, 5, 4, 3]
+    yp = [9.0, 8.0, 5, 4, 20, 9, 8, 11, 9, 7]
+    assert r_value(xp, yp) > .685
+    assert r_value(xp, yp) < .688
     
-
-
-#def test_std_dev():
