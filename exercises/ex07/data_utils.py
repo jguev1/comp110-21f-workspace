@@ -96,3 +96,6 @@ def count(a: list[str]) -> dict[str, int]:
             new_dict[a[i]] = 1
         i += 1
     return new_dict 
+
+
+
